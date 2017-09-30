@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a target="_blank" href="/show/31.131.19.12">31.131.19.12</a>
+        <a href="/" class="btn btn-default"><span class="fa fa-user"></span>Main</a>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <h3><span class="fa fa-user"></span> Local</h3>
+            <span>
+                <b>email</b>: <%= user.local.email %>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+            <span>
+                <b>email</b>: <%= user.facebook.email %><br>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <!-- GOOGLE INFORMATION -->
+        <div class="col-sm-6">
+            <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google</h3>
+            <span>
+                <b>email</b>: <%= user.google.email %>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <!-- GITHUB INFORMATION -->
+        <div class="col-sm-6">
+            <h3 class="text"><span class="fa fa-github"></span> GitHub</h3>
+            <span>
+                <strong>email</strong>: <%= user.github.email %><br>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <!-- TWITTER INFORMATION -->
+        <div class="col-sm-6">
+            <h3 class="text"><span class="fa fa-twitter"></span> Twitter</h3>
+            <span>
+                <strong>email</strong>: <%= user.twitter.displayName %><br>
+            </span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

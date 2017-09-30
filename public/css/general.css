@@ -1,0 +1,86 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.navbar {
+    border-radius: 0;
+    background-color: #00C853;
+}
+
+.login-form {
+    border-radius: 0;
+    background-color: #00C853;
+}
+
+.btn-login:hover {
+    background-color: whitesmoke;
+    color: #00C853;
+}
+
+.btn-login {
+    background-color: #00C853;
+    color: white;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav a:hover {
+    color: #00C853;
+}
+
+.open > a {
+    color: #00C853;
+}
+
+.panel .panel-heading {
+    color: white;
+    background-color: #00C853;
+    border-color: #00C853;
+}
+
+.panel-heading a {
+    color: white;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.port-box {
+    float: left;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5%;
+    width: 4em;
+    height: 4em;
+    color: white;
+}
+
+a .port-box {
+    margin: 1.5em;
+    margin-left: 0em;
+    color: white;
+    text-decoration: none;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
