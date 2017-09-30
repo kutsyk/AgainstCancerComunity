@@ -18,14 +18,14 @@
         <div class="col-md-4 text-center">
             <div class="row">Choose stage of you <%= organ %> illnes.</div>
             <div class="dropdown">
-                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Cancer stage
+                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Choose stage
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
+                    <li><a onclick="return proceed(1);">1</a></li>
+                    <li><a onclick="return proceed(2);">2</a></li>
+                    <li><a onclick="return proceed(3);">3</a></li>
+                    <li><a onclick="return proceed(4);">4</a></li>
                 </ul>
             </div>
         </div>
@@ -35,6 +35,12 @@
         <% include ../partial/footer.ejs %>
     </footer>
 </div>
+
+<script>
+    function proceed(stage) {
+        window.location.href = window.location.pathname + "/" + stage;
+    }
+</script>
 
 <script src="/js/jquery.min.js" crossorigin="anonymous"></script>
 <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>

@@ -1,0 +1,69 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Community</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/radiobutt.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+<body>
+<% include ../partial/header.ejs %>
+<div class="container-fluid" style="min-height: 100%;">
+    <div class="row text-center" style="min-height: 100%;">
+        <div class="col-md-4 text-center"></div>
+        <div class="col-md-4 text-center">
+            <div class="row">Choose treatment.</div>
+            <div class="row">
+                <div class="funkyradio">
+                    <div class="radio">
+                        <div class="funkyradio-success">
+                            <input type="radio" name="radio" id="radio1"/>
+                            <label for="radio1">Surgery</label>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="funkyradio-success">
+                            <input type="radio" name="radio" id="radio2"/>
+                            <label for="radio2">Radiation therapy</label>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="funkyradio-success">
+                            <input type="radio" name="radio" id="radio3"/>
+                            <label for="radio3">Chemotherapy</label>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="funkyradio-success">
+                            <input type="radio" name="radio" id="radio4"/>
+                            <label for="radio4">Targeted Therapy</label>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="funkyradio-success">
+                            <input type="radio" name="radio" id="radio5"/>
+                            <label for="radio5">Stem Cell Transplant</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Continue</button>
+            </div>
+        </div>
+        <div class="col-md-4 text-center"></div>
+    </div>
+    <footer>
+        <% include ../partial/footer.ejs %>
+    </footer>
+</div>
+
+<script src="/js/jquery.min.js" crossorigin="anonymous"></script>
+<script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

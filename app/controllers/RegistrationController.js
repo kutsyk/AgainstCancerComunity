@@ -17,4 +17,8 @@ module.exports = function (app) {
             organ: req.params.organ
         });
     });
+
+    app.get('/level/:organ/:stage', function (req, res, next) {
+        res.render('registration/treatment.ejs', {});
+    });
 };
