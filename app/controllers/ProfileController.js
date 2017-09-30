@@ -3,9 +3,11 @@ let sessionHelper = require('./../middleware/SessionMiddleware');
 
 module.exports = function (app, passport) {
 
-    app.get('/profile', sessionHelper.isLoggedIn, function (req, res) {
-        res.render('profile/profile.ejs', {
-            user: req.user
-        });
+    app.get('/community', function (req, res) {
+        res.render('profile/community.ejs');
     });
-}
+
+    app.get('/menu', function (req, res) {
+        res.render('profile/menu.ejs');
+    });
+};
