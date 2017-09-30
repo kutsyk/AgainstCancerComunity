@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Community</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
@@ -11,18 +11,28 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 </head>
 <body>
-<% include partial/header.ejs %>
+<% include ../partial/header.ejs %>
 <div class="container-fluid" style="min-height: 100%;">
     <div class="row text-center" style="min-height: 100%;">
         <div class="col-md-4 text-center"></div>
         <div class="col-md-4 text-center">
-            Choose stage of you <%= ilness %> illnes.
-            Dropdown menu with levels from 1-4
+            <div class="row">Choose stage of you <%= organ %> illnes.</div>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Cancer stage
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-4 text-center"></div>
     </div>
     <footer>
-        <% include partial/footer.ejs %>
+        <% include ../partial/footer.ejs %>
     </footer>
 </div>
 

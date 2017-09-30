@@ -12,4 +12,9 @@ module.exports = function (app) {
         res.render('registration/body.ejs');
     });
 
+    app.get('/level/:organ', function (req, res, next) {
+        res.render('registration/level.ejs', {
+            organ: req.params.organ
+        });
+    });
 };
