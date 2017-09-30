@@ -2,29 +2,24 @@
     margin-left: 0px;
     margin-right: 0px;
 }
+
 .navbar {
-    border-radius: 0;
-    background-color: #00C853;
+    background-color: #4CAF50;
 }
 
 .login-form {
-    border-radius: 0;
-    background-color: #00C853;
+    background-color: #4CAF50;
 }
 
 .btn-login:hover {
     background-color: whitesmoke;
-    color: #00C853;
+    color: #4CAF50;
 }
 
 .btn-login {
-    background-color: #00C853;
+    background-color: #4CAF50;
     color: white;
     width: 100%;
-}
-
-.btn {
-    border-radius: 0;
 }
 
 .dropdown-menu {
@@ -40,17 +35,17 @@
 }
 
 .nav a:hover {
-    color: #00C853;
+    color: #4CAF50;
 }
 
 .open > a {
-    color: #00C853;
+    color: #4CAF50;
 }
 
 .panel .panel-heading {
     color: white;
-    background-color: #00C853;
-    border-color: #00C853;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
 }
 
 .panel-heading a {
@@ -84,3 +79,10 @@ a .port-box {
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
