@@ -52,8 +52,7 @@ require('./app/routes.js')(app, passport);
 require('./app/controllers/MainController')(app);
 require('./app/controllers/LoginController')(app, passport);
 require('./app/controllers/ProfileController')(app, passport);
-require('./app/controllers/SearchController')(app);
-require('./app/controllers/AddressController')(app);
+require('./app/controllers/RegistrationController')(app);
 // launch ======================================================================
 
 app.listen(port);
