@@ -23,7 +23,7 @@ module.exports = function (app, passport) {
         res.render('profile/prescription.ejs');
     });
 
-    app.get('/menu2', function (req, res) {
+    app.post('/menu2', function (req, res) {
         res.render('profile/menu2.ejs');
     });
 };
