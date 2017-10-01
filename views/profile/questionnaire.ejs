@@ -1,0 +1,566 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Questionnaire</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/circle-menu.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <% include ../partial/header.ejs %>
+        <div class="container-fluid" style="min-height: 100%;">
+            <div class="row text-center" style="min-height: 100%;">
+                <div class="col-md-2 text-center"></div>
+                <div class="col-md-8 text-center">
+                    <!-- import questionnaire Francois-->
+                    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+                    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.1866" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        JotForm.init(function () { /*INIT-END*/
+                        }); JotForm.prepareCalculationsOnTheFly([null, { "name": "vosEffets", "qid": "1", "text": "Vos effets secondaires", "type": "control_head" }, { "name": "submitForm", "qid": "2", "text": "Submit Form", "type": "control_button" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "avezvousDes17", "qid": "17", "text": "Avez-vous des demangeaisons / reactions cutanees ? ", "type": "control_scale" }, null, null, null, null, null, { "name": "evaluezLintensite23", "qid": "23", "text": "Evaluez l&#039;intensite de votre douleur de ce jour.", "type": "control_scale" }, null, { "name": "surUne", "qid": "25", "text": "Sur une echelle de 1 a 10, a quel point etes vous fatigue(e) ?", "type": "control_scale" }, { "name": "quelEst26", "qid": "26", "text": "Quel est l&#039;etat de vos selles ?", "type": "control_radio" }, null, null, null, { "name": "avezvousDes", "qid": "30", "text": "Avez-vous des symptomes grippaux (fievre, courbature) ?", "type": "control_radio" }, null, null, null, null, null, { "name": "perdezvousVos", "qid": "36", "text": "Perdez-vous vos cheveux ?", "type": "control_radio" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "avezvousDes51", "qid": "51", "text": "Avez-vous des troubles auditifs ?", "type": "control_radio" }, { "name": "commentAvezvous", "qid": "52", "text": "Comment avez-vous dormi ? ", "type": "control_scale" }, { "name": "avezvousDes53", "qid": "53", "text": "Avez-vous des troubles du gout ?", "type": "control_radio" }]); setTimeout(function () {
+                            JotForm.paymentExtrasOnTheFly([null, { "name": "vosEffets", "qid": "1", "text": "Vos effets secondaires", "type": "control_head" }, { "name": "submitForm", "qid": "2", "text": "Submit Form", "type": "control_button" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "avezvousDes17", "qid": "17", "text": "Avez-vous des demangeaisons / reactions cutanees ? ", "type": "control_scale" }, null, null, null, null, null, { "name": "evaluezLintensite23", "qid": "23", "text": "Evaluez l&#039;intensite de votre douleur de ce jour.", "type": "control_scale" }, null, { "name": "surUne", "qid": "25", "text": "Sur une echelle de 1 a 10, a quel point etes vous fatigue(e) ?", "type": "control_scale" }, { "name": "quelEst26", "qid": "26", "text": "Quel est l&#039;etat de vos selles ?", "type": "control_radio" }, null, null, null, { "name": "avezvousDes", "qid": "30", "text": "Avez-vous des symptomes grippaux (fievre, courbature) ?", "type": "control_radio" }, null, null, null, null, null, { "name": "perdezvousVos", "qid": "36", "text": "Perdez-vous vos cheveux ?", "type": "control_radio" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "avezvousDes51", "qid": "51", "text": "Avez-vous des troubles auditifs ?", "type": "control_radio" }, { "name": "commentAvezvous", "qid": "52", "text": "Comment avez-vous dormi ? ", "type": "control_scale" }, { "name": "avezvousDes53", "qid": "53", "text": "Avez-vous des troubles du gout ?", "type": "control_radio" }]);
+                        }, 20);
+                    </script>
+                    <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.1866" rel="stylesheet" type="text/css" />
+                    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.1866" />
+                    <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.1866" />
+                    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=59b6a231cf3bfe36162f2ee2"
+                    />
+                    <style type="text/css">
+                        .form-label-left {
+                            width: 150px;
+                        }
+
+                        .form-line {
+                            padding-top: 12px;
+                            padding-bottom: 12px;
+                        }
+
+                        .form-label-right {
+                            width: 150px;
+                        }
+
+                        .form-all {
+                            width: 690px;
+                            color: #555 !important;
+                            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+                            font-size: 14px;
+                        }
+
+                        .form-radio-item label,
+                        .form-checkbox-item label,
+                        .form-grading-label,
+                        .form-header {
+                            color: false;
+                        }
+                    </style>
+                    <style type="text/css" id="form-designer-style">
+                        /* Injected CSS Code */
+                        /*PREFERENCES STYLE*/
+
+                        .form-all {
+                            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Tahoma, sans-serif, sans-serif;
+                        }
+
+                        .form-all .qq-upload-button,
+                        .form-all .form-submit-button,
+                        .form-all .form-submit-reset,
+                        .form-all .form-submit-print {
+                            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Tahoma, sans-serif, sans-serif;
+                        }
+
+                        .form-all .form-pagebreak-back-container,
+                        .form-all .form-pagebreak-next-container {
+                            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Tahoma, sans-serif, sans-serif;
+                        }
+
+                        .form-header-group {
+                            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Tahoma, sans-serif, sans-serif;
+                        }
+
+                        .form-label {
+                            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Tahoma, sans-serif, sans-serif;
+                        }
+
+                        .form-label.form-label-auto {
+                            display: block;
+                            float: none;
+                            text-align: left;
+                            width: 100%;
+                        }
+
+                        .form-line {
+                            margin-top: 12px 36px 12px 36px px;
+                            margin-bottom: 12px 36px 12px 36px px;
+                        }
+
+                        .form-all {
+                            width: 690px;
+                        }
+
+                        .form-label-left,
+                        .form-label-right,
+                        .form-label-left.form-label-auto,
+                        .form-label-right.form-label-auto {
+                            width: 300px;
+                        }
+
+                        .form-all {
+                            font-size: 14pxpx
+                        }
+
+                        .form-all .qq-upload-button,
+                        .form-all .qq-upload-button,
+                        .form-all .form-submit-button,
+                        .form-all .form-submit-reset,
+                        .form-all .form-submit-print {
+                            font-size: 14pxpx
+                        }
+
+                        .form-all .form-pagebreak-back-container,
+                        .form-all .form-pagebreak-next-container {
+                            font-size: 14pxpx
+                        }
+
+                        .supernova .form-all,
+                        .form-all {
+                            background-color: ;
+                            border: 1px solid transparent;
+                        }
+
+                        .form-all {
+                            color: Black;
+                        }
+
+                        .form-header-group .form-header {
+                            color: Black;
+                        }
+
+                        .form-header-group .form-subHeader {
+                            color: Black;
+                        }
+
+                        .form-label-top,
+                        .form-label-left,
+                        .form-label-right,
+                        .form-html,
+                        .form-checkbox-item label,
+                        .form-radio-item label {
+                            color: Black;
+                        }
+
+                        .form-sub-label {
+                            color: 1a1a25;
+                        }
+
+                        .supernova {
+                            background-color: undefined;
+                        }
+
+                        .supernova body {
+                            background: transparent;
+                        }
+
+                        .form-textbox,
+                        .form-textarea,
+                        .form-radio-other-input,
+                        .form-checkbox-other-input,
+                        .form-captcha input,
+                        .form-spinner input {
+                            background-color: undefined;
+                        }
+
+                        .supernova {
+                            background-image: none;
+                        }
+
+                        #stage {
+                            background-image: none;
+                        }
+
+                        .form-all {
+                            background-image: none;
+                        }
+
+                        .ie-8 .form-all:before {
+                            display: none;
+                        }
+
+                        .ie-8 {
+                            margin-top: auto;
+                            margin-top: initial;
+                        }
+                        /*PREFERENCES STYLE*/
+                        /*__INSPECT_SEPERATOR__*/
+                        /* Injected CSS Code */
+                    </style>
+                    <!-- <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-light.css?3.3.1866"
+                    /> -->
+                    <form class="jotform-form" action="/menu2" method="post" name="form_72724893499374"
+                        id="72724893499374" accept-charset="utf-8"> <input type="hidden" name="formID" value="72724893499374" />
+                        <div class="form-all">
+                            <ul class="form-section page-section">
+                                <li id="cid_1" class="form-input-wide" data-type="control_head">
+                                    <div class="form-header-group ">
+                                        <div class="header-text httal htvam">
+                                            <h1 id="header_1" class="form-header" data-component="header"> Vos effets secondaires </h1>
+                                            <div id="subHeader_1" class="form-subHeader"> Grâce à ce formulaire, nous optimisons votre traitement de façon proactive et
+                                                améliorons le traitement de milliers de malades atteints d&#x27;un cancer.
+                                                </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_scale" id="id_23"> <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23"> Evaluez l'intensité de votre douleur de ce jour. <span class="form-required"> * </span> </label>
+                                    <div id="cid_23" class="form-input-wide jf-required">
+                                        <table summary="" cellpadding="4" cellspacing="0" class="form-scale-table" data-component="scale">
+                                            <tbody>
+                                                <tr>
+                                                    <th> </th>
+                                                    <th style="text-align:center;"> <label for="input_23_1"> 1 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_2"> 2 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_3"> 3 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_4"> 4 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_5"> 5 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_6"> 6 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_7"> 7 </label> </th>
+                                                    <th style="text-align:center;"> <label for="input_23_8"> 8 </label>
+                                                    </th>
+                                                    <th style="text-align:center;"> <label for="input_23_9"> 9 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_23_10"> 10 </label> </th>
+                                                    <th> </th>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="input_23_1"> Pas de douleur </label> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="1" title="1" id="input_23_1" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="2" title="2" id="input_23_2" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="3" title="3" id="input_23_3" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="4" title="4" id="input_23_4" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="5" title="5" id="input_23_5" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="6" title="6" id="input_23_6" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="7" title="7" id="input_23_7" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="8" title="8" id="input_23_8" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="9" title="9" id="input_23_9" required="" checked/> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q23_evaluezLintensite23"
+                                                            value="10" title="10" id="input_23_10" required="" /> </td>
+                                                    <td>
+                                                    <label for="input_23_10"> Insoutenable </label> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_scale" id="id_25"> <label class="form-label form-label-top form-label-auto" id="label_25" for="input_25"> Sur une échelle de 1 à 10, à quel point êtes vous fatigué(e) ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_25" class="form-input-wide jf-required">
+                                        <table summary="" cellpadding="4" cellspacing="0" class="form-scale-table" data-component="scale">
+                                            <tbody>
+                                                <tr>
+                                                    <th> </th>
+                                                    <th style="text-align:center;"> <label for="input_25_1"> 1 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_2"> 2 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_3"> 3 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_4"> 4 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_5"> 5 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_6"> 6 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_7"> 7 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_8"> 8 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_9"> 9 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_25_10"> 10 </label> </th>
+                                                    <th> </th>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="input_25_1"> En forme </label> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="1" title="1" id="input_25_1" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="2" title="2" id="input_25_2" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="3" title="3" id="input_25_3" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="4" title="4" id="input_25_4" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="5" title="5" id="input_25_5" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="6" title="6" id="input_25_6" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="7" title="7" id="input_25_7" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="8" title="8" id="input_25_8" required="" checked/> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="9" title="9" id="input_25_9" required="" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio validate[required]" type="radio" name="q25_surUne"
+                                                            value="10" title="10" id="input_25_10" required="" /> </td>
+                                                    <td>
+                                                    <label for="input_25_10"> Epuisé(e) </label> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_radio" id="id_30"> <label class="form-label form-label-top form-label-auto" id="label_30" for="input_30"> Avez-vous des symptômes grippaux (fièvre, courbature) ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_30" class="form-input-wide jf-required">
+                                        <div class="form-single-column" data-component="radio"> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_30_0" name="q30_avezvousDes"
+                                                value="OUI" required="" checked/> <label id="label_input_30_0" for="input_30_0"> OUI </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_30_1" name="q30_avezvousDes"
+                                                value="NON" required="" /> <label id="label_input_30_1" for="input_30_1"> NON </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <label style="display:none;" for="other_30"> Other option </label> <input type="radio" class="form-radio-other form-radio validate[required]" name="q30_avezvousDes" id="other_30" value="other" /> <input type="text" class="form-radio-other-input form-textbox" name="q30_avezvousDes[other]" data-otherhint="Other" placeholder="Other" size="15" id="input_30" /> <br/> </span>                                            </div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_radio" id="id_26"> <label class="form-label form-label-top form-label-auto" id="label_26" for="input_26"> Quel est l'état de vos selles ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_26" class="form-input-wide jf-required">
+                                        <div class="form-single-column" data-component="radio"> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_26_0" name="q26_quelEst26"
+                                                value="Constipé" required="" /> <label id="label_input_26_0" for="input_26_0"> Constipé </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_26_1" name="q26_quelEst26"
+                                                value="Normal" required="" /> <label id="label_input_26_1" for="input_26_1"> Normal </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_26_2" name="q26_quelEst26"
+                                                value="Diarrhée" required="" checked/> <label id="label_input_26_2" for="input_26_2"> Diarrhée </label>                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_radio" id="id_36"> <label class="form-label form-label-top form-label-auto" id="label_36" for="input_36"> Perdez-vous vos cheveux ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_36" class="form-input-wide jf-required">
+                                        <div class="form-single-column" data-component="radio"> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_36_0" name="q36_perdezvousVos"
+                                                value="Non" required="" /> <label id="label_input_36_0" for="input_36_0"> Non </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_36_1" name="q36_perdezvousVos"
+                                                value="Oui, un peu" required="" checked/> <label id="label_input_36_1" for="input_36_1"> Oui, un peu </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_36_2" name="q36_perdezvousVos"
+                                                value="Oui, très rapidement" required="" /> <label id="label_input_36_2" for="input_36_2"> Oui, très rapidement </label>                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_radio" id="id_51"> <label class="form-label form-label-top form-label-auto" id="label_51" for="input_51"> Avez-vous des troubles auditifs ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_51" class="form-input-wide jf-required">
+                                        <div class="form-single-column" data-component="radio"> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_51_0" name="q51_avezvousDes51"
+                                                value="Non" required="" checked/> <label id="label_input_51_0" for="input_51_0"> Non </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_51_1" name="q51_avezvousDes51"
+                                                value="Oui" required="" /> <label id="label_input_51_1" for="input_51_1"> Oui </label>                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_radio" id="id_53"> <label class="form-label form-label-top form-label-auto" id="label_53" for="input_53"> Avez-vous des troubles du goût ? <span class="form-required"> * </span> </label>
+                                    <div id="cid_53" class="form-input-wide jf-required">
+                                        <div class="form-single-column" data-component="radio"> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_53_0" name="q53_avezvousDes53"
+                                                value="Non" required="" /> <label id="label_input_53_0" for="input_53_0"> Non </label>                                            </span> <span class="form-radio-item" style="clear:left;"> <span class="dragger-item"> </span>                                            <input type="radio" class="form-radio validate[required]" id="input_53_1" name="q53_avezvousDes53"
+                                                value="Oui" required="" checked/> <label id="label_input_53_1" for="input_53_1"> Oui </label>                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-line" data-type="control_scale" id="id_17"> <label class="form-label form-label-top form-label-auto" id="label_17" for="input_17"> Avez-vous des démangeaisons / réactions cutanées ? </label>
+                                    <div id="cid_17" class="form-input-wide">
+                                        <table summary="" cellpadding="4" cellspacing="0" class="form-scale-table" data-component="scale">
+                                            <tbody>
+                                                <tr>
+                                                    <th> </th>
+                                                    <th style="text-align:center;"> <label for="input_17_1"> 1 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_2"> 2 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_3"> 3 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_4"> 4 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_5"> 5 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_6"> 6 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_7"> 7 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_8"> 8 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_9"> 9 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_17_10"> 10 </label> </th>
+                                                    <th> </th>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="input_17_1"> Non </label> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="1"
+                                                            title="1" id="input_17_1" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="2"
+                                                            title="2" id="input_17_2" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="3"
+                                                            title="3" id="input_17_3" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="4"
+                                                            title="4" id="input_17_4" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="5"
+                                                            title="5" id="input_17_5" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="6"
+                                                            title="6" id="input_17_6" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="7"
+                                                            title="7" id="input_17_7" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="8"
+                                                            title="8" id="input_17_8" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" checked value="9"
+                                                            title="9" id="input_17_9" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q17_avezvousDes17" value="10"
+                                                            title="10" id="input_17_10" /> </td>
+                                                    <td> <label for="input_17_10"> Enormément </label> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="form-line" data-type="control_scale" id="id_52"> <label class="form-label form-label-top form-label-auto" id="label_52" for="input_52"> Comment avez-vous dormi ? </label>
+                                    <div id="cid_52" class="form-input-wide">
+                                        <table summary="" cellpadding="4" cellspacing="0" class="form-scale-table" data-component="scale">
+                                            <tbody>
+                                                <tr>
+                                                    <th> </th>
+                                                    <th style="text-align:center;"> <label for="input_52_1"> 1 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_2"> 2 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_3"> 3 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_4"> 4 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_5"> 5 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_6"> 6 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_7"> 7 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_8"> 8 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_9"> 9 </label> </th>
+                                                    <th style="text-align:center;">
+                                                    <label for="input_52_10"> 10 </label> </th>
+                                                    <th> </th>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="input_52_1"> Bien </label> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="1"
+                                                            title="1" id="input_52_1" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="2"
+                                                            title="2" id="input_52_2" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="3"
+                                                            title="3" id="input_52_3" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="4"
+                                                            title="4" id="input_52_4" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="5"
+                                                            title="5" id="input_52_5" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="6"
+                                                            title="6" id="input_52_6" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="7"
+                                                            title="7" id="input_52_7" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="8"
+                                                            title="8" id="input_52_8" /> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="9"
+                                                            title="9" id="input_52_9" checked/> </td>
+                                                    <td style="text-align:center;">
+                                                    <input class="form-radio" type="radio" name="q52_commentAvezvous" value="10"
+                                                            title="10" id="input_52_10" /> </td>
+                                                    <td> <label for="input_52_10"> Mal</label> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="form-line" data-type="control_button" id="id_2">
+                                    <div id="cid_2" class="form-input-wide">
+                                        <div style="margin-left:156px;" class="form-buttons-wrapper"> <button href="/menu2" id="input_2" type="submit" class="form-submit-button form-submit-button-light"
+                                                data-component="button"> Envoyer le questionnaire </button> </div>
+                                    </div>
+                                </li>
+                                <li style="display:none"> Should be Empty: <input type="text" name="website" value="" /> </li>
+                            </ul>
+                        </div>
+                        <script>
+                            JotForm.showJotFormPowered = "new_footer";
+                        </script> <input type="hidden" id="simple_spc" name="simple_spc" value="72724893499374" />
+                        <script
+                            type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "72724893499374-72724893499374"; </script>
+                            <div class="formFooter-heightMask"> </div>
+                            <div class="formFooter"> <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=72724893499374&utm_content=jotform_logo&utm_campaign=powered_by_jotform_signup_hp"
+                                    target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png" alt="" style="height: 44px;"></a>
+                                <div class="formFooter-rightSide"> <span class="formFooter-text"> Now create your own JotForm - It's free! </span> <a class="formFooter-button"
+                                        href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=72724893499374&utm_content=jotform_button&utm_campaign=powered_by_jotform_signup_hp"
+                                        target="_blank">Create your own JotForm</a> </div>
+                            </div>
+                    </form>
+                    <script type="text/javascript">
+                                                    JotForm.ownerView = true;
+                    </script>
+                    <script type="text/javascript">
+                        JotForm.forwardToEu = true;
+                    </script>
+                    <!-- end import -->
+                </div>
+                <div class="col-md-2 text-center"></div>
+            </div>
+        </div>
+        <script>
+                        function open(page) {
+                            console.log(page);
+                            window.parent.location.href = page;
+                        }
+
+        </script>
+        <script src="/js/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
