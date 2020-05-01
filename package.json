@@ -4,7 +4,9 @@
   "description": "\"# AgainstCancerComunity\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,8 @@
     "request": "~2.79.0",
     "request-promise": "^4.1.1",
     "request-promise-native": "^1.0.3",
-    "serve-favicon": "2.3.2"
-  }
+    "serve-favicon": "2.3.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
